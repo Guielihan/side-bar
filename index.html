@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoDevs Sidebar</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons (Boxicons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <!-- Header / Logo -->
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon custom-logo">
+                    <!-- Updated to use the requested image -->
+                    <img src="GODEVS.PNG" alt="Logo GoDevs">
+                </div>
+                <span class="logo-text">GoDevs</span>
+            </div>
+            <button class="toggle-btn" id="toggleBtn">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <!-- Content/Menu Wrapper for scroll -->
+        <div class="sidebar-menu-wrapper">
+            <!-- Menu Group 1 -->
+            <div class="menu-group">
+                <div class="menu-label">Menu</div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="link-name">Início</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2'></i>
+                            <span class="link-name">Atividade</span>
+                        </a>
+                        <span class="badge red">10</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-check-square'></i>
+                            <span class="link-name">Tarefas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-user'></i>
+                            <span class="link-name">Usuários</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-bell'></i>
+                            <span class="link-name">Notificações</span>
+                        </a>
+                        <span class="badge red">21</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu Group 2 -->
+            <div class="menu-group">
+                <div class="menu-label transparent-label">Configurações</div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="link-name">Configuração</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-flag'></i>
+                            <span class="link-name">Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-help-circle'></i>
+                            <span class="link-name">Suporte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <div class="menu-label">GRUPO</div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="dot green"></span>
+                            <span class="link-name">GoDevs</span>
+                            <i class='bx bx-chevron-right arrow'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="dot blue"></span>
+                            <span class="link-name">Design System</span>
+                            <i class='bx bx-chevron-right arrow'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="dot orange"></span>
+                            <span class="link-name">Kampus BIU</span>
+                            <i class='bx bx-chevron-right arrow'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="mode-toggle-container">
+                <div class="mode-toggle">
+                    <div class="toggle-option active-mode" id="lightModeBtn">
+                        <i class='bx bx-sun'></i>
+                        <span class="mode-text">Claro</span>
+                    </div>
+                    <div class="toggle-option" id="darkModeBtn">
+                        <i class='bx bx-moon'></i>
+                        <span class="mode-text">Escuro</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <img src="guielihan.png" alt="Usuario" class="avatar">
+                <div class="user-info">
+                    <div class="name">Guielihan - GoDevs</div>
+                    <div class="email">guielihan@outlook.com</div>
+                </div>
+                <i class='bx bx-log-out logout-icon'></i>
+            </div>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
